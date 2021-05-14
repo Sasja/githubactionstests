@@ -1,6 +1,9 @@
 name: My github actions test
 
-on: push
+on:
+  push:
+    paths:
+      - 'projectA/**'
 
 jobs:
   job_1:
@@ -8,4 +11,4 @@ jobs:
 
     steps:
     - name: blah
-      run: echo blah
+      run: echo projectA
