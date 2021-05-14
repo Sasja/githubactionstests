@@ -1,0 +1,11 @@
+name: My github actions test
+
+on: push
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: blah
+      run: echo blah
